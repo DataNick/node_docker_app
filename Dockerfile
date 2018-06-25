@@ -42,3 +42,9 @@ RUN npm i --production
 RUN npm i -g pm2
 
 ADD . /var/www/app/current
+
+EXPOSE 4500
+
+CMD ["pm2", "start", "processes.json", "--no-daemon"]
+
+
