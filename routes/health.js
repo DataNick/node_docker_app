@@ -2,8 +2,9 @@ const router = require('express').Router();
 
 router.get('/', (req, res, next) => {
   return res.json({
-    docker: 'rocks!'
+    healthy: true
   });
 });
 
 module.exports = router;
+
